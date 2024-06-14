@@ -2,41 +2,24 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-04T22:15:37 PDT" name="Suite" finished-at="2024-06-04T22:15:51 PDT" duration-ms="13327">
+  <suite started-at="2024-06-14T13:54:01 PDT" name="Parallel Testing" finished-at="2024-06-14T13:54:01 PDT" duration-ms="84">
     <groups>
-      <group name="functional">
-        <method signature="TestCases1.TestCases2()[pri:0, instance:Maven_Testng.Maven_Testng.TestCases1@32eff876]" name="TestCases2" class="Maven_Testng.Maven_Testng.TestCases1"/>
-      </group> <!-- functional -->
-      <group name="regression">
-        <method signature="TestCases1.TestCases3()[pri:0, instance:Maven_Testng.Maven_Testng.TestCases1@32eff876]" name="TestCases3" class="Maven_Testng.Maven_Testng.TestCases1"/>
-      </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="TestCases1.TestCases1()[pri:0, instance:Maven_Testng.Maven_Testng.TestCases1@32eff876]" name="TestCases1" class="Maven_Testng.Maven_Testng.TestCases1"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-06-04T22:15:37 PDT" name="test" finished-at="2024-06-04T22:15:51 PDT" duration-ms="13327">
-      <class name="Maven_Testng.Maven_Testng.TestCases1">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:Maven_Testng.Maven_Testng.TestCases1@32eff876]" started-at="2024-06-04T22:15:37 PDT" name="beforeClass" finished-at="2024-06-04T22:15:46 PDT" duration-ms="8790" status="PASS">
+    <test started-at="2024-06-14T13:54:01 PDT" name="Test Parallel" finished-at="2024-06-14T13:54:01 PDT" duration-ms="84">
+      <class name="ParallelTest.ParallelDemo">
+        <test-method signature="test1()[pri:0, instance:ParallelTest.ParallelDemo@72057ecf]" started-at="2024-06-14T13:54:01 PDT" name="test1" finished-at="2024-06-14T13:54:01 PDT" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="TestCases1()[pri:0, instance:Maven_Testng.Maven_Testng.TestCases1@32eff876]" started-at="2024-06-04T22:15:46 PDT" name="TestCases1" finished-at="2024-06-04T22:15:48 PDT" duration-ms="1376" status="PASS">
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:ParallelTest.ParallelDemo@72057ecf]" started-at="2024-06-14T13:54:01 PDT" name="test2" finished-at="2024-06-14T13:54:01 PDT" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestCases1 -->
-        <test-method signature="TestCases2()[pri:0, instance:Maven_Testng.Maven_Testng.TestCases1@32eff876]" started-at="2024-06-04T22:15:48 PDT" name="TestCases2" depends-on-groups="smoke" finished-at="2024-06-04T22:15:49 PDT" duration-ms="1659" status="PASS">
+        </test-method> <!-- test2 -->
+        <test-method signature="test3()[pri:0, instance:ParallelTest.ParallelDemo@72057ecf]" started-at="2024-06-14T13:54:01 PDT" name="test3" finished-at="2024-06-14T13:54:01 PDT" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestCases2 -->
-        <test-method signature="TestCases3()[pri:0, instance:Maven_Testng.Maven_Testng.TestCases1@32eff876]" started-at="2024-06-04T22:15:49 PDT" name="TestCases3" depends-on-groups="functional, smoke" finished-at="2024-06-04T22:15:50 PDT" duration-ms="1045" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TestCases3 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:Maven_Testng.Maven_Testng.TestCases1@32eff876]" started-at="2024-06-04T22:15:50 PDT" name="afterClass" finished-at="2024-06-04T22:15:51 PDT" duration-ms="358" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- Maven_Testng.Maven_Testng.TestCases1 -->
-    </test> <!-- test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- test3 -->
+      </class> <!-- ParallelTest.ParallelDemo -->
+    </test> <!-- Test Parallel -->
+  </suite> <!-- Parallel Testing -->
 </testng-results>

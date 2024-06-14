@@ -2,6 +2,7 @@ package Maven_Testng.Maven_Testng;
 
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import junit.framework.Assert;
 
 import org.testng.annotations.BeforeClass;
@@ -17,8 +18,7 @@ import org.testng.annotations.AfterClass;
 public class TestCases1 {
 	
 	 WebDriver driver=null;
- @Test(groups={"smoke"})
- //(groups={"smoke","functional","regression"})  
+ @Test
    public void TestCases1() {
 	  driver.findElement(By.xpath("//a[@id='navbarDropdown']")).click();
 	  WebElement aboutLink= driver.findElement(By.xpath("//a[@class='dropdown-item'][normalize-space()='About Selenium']"));
@@ -32,9 +32,7 @@ public class TestCases1 {
 	  
   }
   
-  @Test (dependsOnGroups="smoke",groups= {"functional"})
-  //(groups= {"smoke","functional"})
-  //(dependsOnMethods="TestCases1", groups= {"smoke","functional"})
+  @Test 
    public void TestCases2() {
 	  
 	  WebElement downloadLink= driver.findElement(By.xpath("//a[@href='/downloads']"));
@@ -45,8 +43,7 @@ public class TestCases1 {
 	  String title1 = driver.getTitle();
 	  System.out.println("My current page title : "+title1);
   }
-  @Test (dependsOnGroups={"smoke","functional"},groups="regression")
-  //(dependsOnMethods="TestCases2",groups="regression")
+  @Test 
 public void TestCases3() {
 	  
 	  WebElement documentationLink= driver.findElement(By.xpath("//span[normalize-space()='Documentation']"));
@@ -59,7 +56,9 @@ public void TestCases3() {
   @BeforeClass(alwaysRun=true)
   public void beforeClass() {
 	  
-	  System.setProperty("webDriver.chrome,driver", "F:\\Selenium JAR file\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
+	 // System.setProperty("webDriver.chrome,driver", "F:\\Selenium JAR file\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
+	 // driver=new ChromeDriver();
+	  WebDriverManager.chromedriver().setup();
 	  driver=new ChromeDriver();
 	  driver.manage().window().maximize();
 	  driver.manage().deleteAllCookies();

@@ -12,11 +12,11 @@
 	
     <classes>
       <class name="Maven_Testng.Maven_Testng.TestCases1">
-		<!-- <methods>
-			<include name="TestCases1"></include>
+		<methods>
 			<include name="TestCases3"></include>
-			<exclude name="TestCases2"></exclude>
-		</methods>	-->
+			<include name="TestCases1"></include>
+			<include name="TestCases2"></include>
+		</methods>
 	  </class>
      </classes>
   </test> <!-- Test -->

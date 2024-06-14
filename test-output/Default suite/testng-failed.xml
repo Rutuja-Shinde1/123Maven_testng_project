@@ -8,6 +8,7 @@
           <include name="beforeClass"/>
           <include name="TestCases2"/>
           <include name="TestCases3"/>
+          <include name="TestCases1"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- Maven_Testng.Maven_Testng.TestCases1 -->
