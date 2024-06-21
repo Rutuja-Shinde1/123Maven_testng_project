@@ -3,15 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Maven_Testng.Maven_Testng.TestCases1">
+      <class name="IListenerSampleDemo.Reporting">
         <methods>
-          <include name="beforeClass"/>
-          <include name="TestCases2"/>
-          <include name="TestCases3"/>
-          <include name="TestCases1"/>
-          <include name="afterClass"/>
+          <include name="Test_Skipped"/>
+          <include name="Test_Failure"/>
         </methods>
-      </class> <!-- Maven_Testng.Maven_Testng.TestCases1 -->
+      </class> <!-- IListenerSampleDemo.Reporting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
